@@ -1,0 +1,101 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+
+	html {
+		font-family: "Helvetica";
+		background: white;
+	}
+
+	body {
+		background: #F0F0F0;
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	#header {
+		border-radius: 25px;
+		background: lightsteelblue;
+	}
+
+	#header {
+		padding-top: 5;
+		background: lightsteelblue;
+	}
+
+	#inner-header {
+		padding-left: 10;
+	}
+
+	#main {
+		padding-left: 10;
+	}
+
+	input[type="text"],
+	select {
+		border-radius: 25px;
+		color: grey;
+		border: 1px solid lightsteelblue;
+		height: 30px;
+		line-height: 15px;
+		margin: 2px 6px 16px 0px;
+	}
+
+	input[type="submit"] {
+		border-radius: 10px;
+		padding: 5px 10px 5px 10px;
+		color: black;
+		background: lightsteelblue;
+		border: none;
+		box-shadow: 1px 1px 1px #4C6E91;
+	}
+
+	input[type="submit"]:hover {
+		background: steelblue;
+	}
+
+	div.container>div:nth-of-type(odd) {
+		background: #F8F8F8;
+	}
+
+	div.container>div:nth-of-type(even) {
+		background: #F5F5F5;
+	}
+
+	div.container>div {
+		border-radius: 25px;
+	}
+
+    </style>
+</head>
+
+<body>
+<section class="hero is-primary">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Paste and dump
+            </h1>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div class="center" style="text-align:center;">
+        <h2>Paste it here</h2>
+        <br>
+        <form align=center action="link" method=post enctype=multipart/form-data>
+            <div class="field">
+                <div class="control">
+                    <textarea name="original_text" class="textarea is-primary" placeholder="Primary textarea"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="button is-primary is-centered">Submit</button>
+        </form>
+    </div>
+</div>
+</body>
